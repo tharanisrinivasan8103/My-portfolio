@@ -77,6 +77,7 @@ export default function Contact() {
           value={formData.name}
           onChange={handleChange}
           required
+          autoComplete="name"
           className="p-3 rounded bg-white bg-opacity-10 text-white placeholder-gray-400"
         />
         <input
@@ -86,6 +87,7 @@ export default function Contact() {
           value={formData.email}
           onChange={handleChange}
           required
+          autoComplete="email"
           className="p-3 rounded bg-white bg-opacity-10 text-white placeholder-gray-400"
         />
         <textarea
@@ -95,6 +97,7 @@ export default function Contact() {
           value={formData.message}
           onChange={handleChange}
           required
+          autoComplete="off"
           className="p-3 rounded bg-white bg-opacity-10 text-white placeholder-gray-400"
         ></textarea>
         <button
